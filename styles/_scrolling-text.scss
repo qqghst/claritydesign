@@ -14,3 +14,18 @@
     font-kerning: none;
     // position: relative;
 }
+
+.scrolling-text > h1 > div {
+    background: linear-gradient(
+        to right,
+        rgb(255, 255, 255) 50%,
+        rgb(29, 29, 29) 50%
+    );
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-kerning: none;
+    // position: relative;
+}

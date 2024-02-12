@@ -1,0 +1,69 @@
+@import '../../../styles/variables';
+
+.masthead {
+    &__container {
+        min-height: 100vh;
+        min-width: 100vw;
+        position: relative;
+        overflow-x: hidden;
+        // background-color: $color-black;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .svg {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            overflow: hidden;
+            z-index: 0;
+
+            svg,
+            img {
+                width: 99vw;
+                height: 50vw;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .masthead {
+        &__container {
+            min-height: 100vh;
+            min-width: 100vw;
+            overflow-x: hidden;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: flex-start;
+            padding: 0 4.831vw; //0 20px, 414
+
+            .svg {
+                width: 100%;
+                height: 100vh;
+                position: absolute;
+                overflow: hidden;
+                z-index: 0;
+
+                svg,
+                img {
+                    width: 99vw;
+                    height: 50vw;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../styles/variables';
+
+.whiteBg {
+    &__container {
+        min-height: 150vh;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .img {
+        width: 43.75vw;
+        height: auto;
+    }
+
+    .imgMobile {
+        // margin: 0 auto;
+        width: 81.75vw;
+        height: auto;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    h1 {
+        position: absolute;
+        z-index: 100;
+    }
+
+    div:nth-child(3) {
+        font-size: 19.2px;
+        position: absolute;
+        left: 16.146vw; //310px
+        transform: translateY(15vw); //240px
+        z-index: 100;
+    }
+}

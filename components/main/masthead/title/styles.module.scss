@@ -1,0 +1,29 @@
+.margin2 {
+    margin-right: 7.938vw; //127px, 1600
+
+    @media (max-width: 768px) {
+        margin-right: 0;
+    }
+}
+
+.margin3 {
+    margin-right: 15.25vw; //244px, 1600
+
+    @media (max-width: 768px) {
+        margin-right: 0;
+    }
+}
+
+.scrolling {
+    position: absolute;
+    transform: translateY(6.5vw); //104px, 1600
+    left: 38.063vw; //609px, 1600
+
+    @media (max-width: 768px) {
+        position: absolute;
+        transform: translateY(-94.4vw); //-502px, 414
+        left: 28.744vw; //119px, 414
+    }
+}
+
+
