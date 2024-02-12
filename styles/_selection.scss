@@ -1,0 +1,11 @@
+@import './variables';
+
+::selection {
+    background: $gradient-second;
+    color: $color-white;
+    
+}
+::-moz-selection {
+    background: $gradient-second;
+    color: $color-white;
+}

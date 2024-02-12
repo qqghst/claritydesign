@@ -1,0 +1,14 @@
+@import './variables';
+
+h1 {
+    font-size: 6.192vw; //99.07px, 1600
+    font-weight: 600;
+    letter-spacing: -0.03em; //2.9px
+    line-height: 105%;
+    color: $color-white;
+
+    @media (max-width: 768px) {
+        font-size: 9.616vw; //39.81px
+        line-height: 105%;
+    }
+}
