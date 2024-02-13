@@ -12,7 +12,7 @@ const Container: React.FC = () => {
 
 	useEffect(() => {
 		(async () => {
-			if (window.innerWidth > 768) {
+			if (!isMobile) {
 				const LocomotiveScroll = (await import('locomotive-scroll')).default;
 
 				const locomotiveScroll = new LocomotiveScroll();

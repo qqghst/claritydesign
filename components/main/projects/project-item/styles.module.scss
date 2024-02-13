@@ -66,9 +66,10 @@
                     transition: 0.3s ease-in-out;
 
                     @media (max-width: 768px) {
-                        width: 390px; //240px; 414
-                        height: 500px; //400px; 414
+                        width: 82.126vw; //340px; 414
+                        height: 115.942vw; //480px; 414
                         border-radius: 24px;
+                        object-fit: cover;
                     }
                 }
             }
