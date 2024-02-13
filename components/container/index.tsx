@@ -4,13 +4,19 @@ import React, { useEffect } from 'react';
 import Intro from '@/components/main/intro';
 import TechStack from '@/components/main/tech-stack';
 import Outro from '@/components/main/outro';
+import useWindowSize from '@/hooks/useWindowSize';
 
 const Container: React.FC = () => {
+	const { width } = useWindowSize();
+	const isMobile = width < 768;
+
 	useEffect(() => {
 		(async () => {
-			const LocomotiveScroll = (await import('locomotive-scroll')).default;
+			if (window.innerWidth > 768) {
+				const LocomotiveScroll = (await import('locomotive-scroll')).default;
 
-			const locomotiveScroll = new LocomotiveScroll();
+				const locomotiveScroll = new LocomotiveScroll();
+			}
 		})();
 	}, []);
 	return (
