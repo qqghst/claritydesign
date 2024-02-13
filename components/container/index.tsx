@@ -8,7 +8,7 @@ import useWindowSize from '@/hooks/useWindowSize';
 
 const Container: React.FC = () => {
 	const { width } = useWindowSize();
-	const isMobile = width < 768;
+	const isMobile = width < 769;
 
 	useEffect(() => {
 		(async () => {
