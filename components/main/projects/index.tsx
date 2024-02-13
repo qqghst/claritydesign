@@ -7,8 +7,12 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import SplitType from 'split-type';
 import { projects } from './data';
 import ProjectItem from './project-item';
+import useWindowSize from '@/hooks/useWindowSize';
 
 const Projects: React.FC = () => {
+	const { width } = useWindowSize();
+	const isMobile = width < 768;
+
 	const tl = useRef<gsap.core.Timeline | null>(null);
 
 	const sectionRef = useRef<HTMLDivElement>(null);
@@ -23,7 +27,7 @@ const Projects: React.FC = () => {
 			scrollTrigger: {
 				trigger: triggerRef.current,
 				start: 'top top',
-				end: '2000 top',
+				end: isMobile ? '500 top' : '2000 top',
 				scrub: 1,
 				pin: true,
 			},

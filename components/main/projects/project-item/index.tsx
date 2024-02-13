@@ -18,7 +18,7 @@ const ProjectItem: React.FC<IProjectsItemProps> = ({ title, description, src, hr
 							<div className={styles.textContainer}>
 								<div>
 									<Image src='/main/projects/arrow.svg' width={16} height={1} alt='arrow' />
-									<span className='px19'>{title}</span>
+									<span className='px19 text-white'>{title}</span>
 								</div>
 								<span className='px13'>{description}</span>
 							</div>

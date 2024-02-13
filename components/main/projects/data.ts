@@ -3,14 +3,14 @@ export const projects = [
 		id: 1,
 		image: '/main/projects/1.webp',
 		title: 'Sport Noise',
-		description: '2022',
+		description: '2023',
 		href: 'https://sportnoise.ru/',
 	},
 	{
 		id: 2,
 		image: '/main/projects/2.webp',
 		title: 'TenderPlay',
-		description: '2021',
+		description: '2023',
 		href: 'https://tenderplay.ru/',
 	},
 	{
@@ -22,9 +22,9 @@ export const projects = [
 	},
 	{
 		id: 4,
-		image: '/main/projects/1.webp',
-		title: 'Fourth project',
-		description: '2024',
-		href: '/project4',
+		image: '/main/projects/4.webp',
+		title: 'Historical dates',
+		description: '2023',
+		href: 'https://only-team-puce.vercel.app/',
 	},
 ];
