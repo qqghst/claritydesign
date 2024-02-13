@@ -1,12 +1,25 @@
 @import '../../../styles/variables';
 
 .logo {
-    &__container {
-        z-index: 3;
-        span {
-            font-size: 1vw;
-            font-weight: 400;
-            color: $color-white;
-        }
-    }
+	&__container {
+		z-index: 3;
+		span {
+			font-size: 1vw;
+			font-weight: 400;
+			color: $color-white;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.logo {
+		&__container {
+			z-index: 3;
+			span {
+				font-size: 3.865vw;
+				font-weight: 400;
+				color: $color-white;
+			}
+		}
+	}
 }
